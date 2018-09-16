@@ -79,16 +79,6 @@ Terraform version 0.11.8 is required for this module to work.
 | dns_name | Load Balancer DNS Name |
 
 
-- run ```
-terraform init
-```
-- run ```
-terraform plan
-```
-- run ```
-terraform apply
-```
-
 
 ## Authors
 
