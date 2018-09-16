@@ -74,6 +74,9 @@ Update the values accordingly, if no profile has been created use `aws configure
 |------|-------------|
 | dns_name | Load Balancer DNS Name |
 
+## Considerations
+Be aware that Terraform can post `creation completed` on some resources like AWS instances  before resources are fully operative, Terraform can finish deploying and the system could take a few minutes to be ready.
+
 ## Terraform version
 
 Terraform version 0.11.8 is required for this module to work.
