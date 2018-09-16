@@ -46,10 +46,6 @@ terraform {
 Update the values accordingly, if no profile has been created use `aws configure --profile PROFILE_NAME` to create a new profile.
 
 
-## Terraform version
-
-Terraform version 0.11.8 is required for this module to work.
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -78,7 +74,9 @@ Terraform version 0.11.8 is required for this module to work.
 |------|-------------|
 | dns_name | Load Balancer DNS Name |
 
+## Terraform version
 
+Terraform version 0.11.8 is required for this module to work.
 
 ## Authors
 
