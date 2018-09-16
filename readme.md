@@ -23,7 +23,7 @@ The following resources will be created in AWS:
 
 #### 1. Update the **provider.tf** file to provide your credentials.
 
-Update the **UPPERCASE** values
+Update the values accordingly. **UPPERCASE** values should always be updated.
 ```hcl
 provider "aws" {
   shared_credentials_file = "~/.aws/credentials"
@@ -50,7 +50,7 @@ Update the values accordingly, if no profile has been created use `aws configure
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| profile | AWS profile to use | string | `PROFILE` | yes |
+| profile | AWS profile to use, use `aws configure --profile PROFILE_NAME` to create a new profile | string | `PROFILE` | yes |
 | aws_region | AWS Region to use | string | `us-east-1` | yes |
 | public_key | To create a new key pair run 'ssh-keygen -t rsa -b 4096 -C noname' and specify the public key `key.pub` | string | `~/.ssh/key.pub` | yes |
 | key_name | Name of key-pair to create | string | `bastion_key` | yes |
