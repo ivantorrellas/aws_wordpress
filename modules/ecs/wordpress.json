@@ -1,0 +1,29 @@
+[
+  {
+    "name": "wordpress",
+    "image": "wordpress",
+    "environment": [
+      {
+        "name": "WORDPRESS_DB_HOST",
+        "value": "wordpress.cxlb6puxwqyp.us-east-1.rds.amazonaws.com"
+      },
+      {
+        "name": "WORDPRESS_DB_USER",
+        "value": "username"
+      },
+      {
+        "name": "WORDPRESS_DB_PASSWORD",
+        "value": "wordpressPassword!"
+      }
+    ],
+    "cpu": 10,
+    "memory": 512,
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80
+      }
+    ]
+  }
+]
