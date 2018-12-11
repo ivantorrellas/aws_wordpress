@@ -30,6 +30,7 @@ data "template_file" "user_data" {
   template = "${file("files/user_data.sh")}"
 
   vars {
+      TAG = "${var.image_tag}"
       WORDPRESS_DB_HOST = "${module.db.this_db_instance_address}"
       WORDPRESS_DB_USER = "${var.db_username}"
       WORDPRESS_DB_PASSWORD = "${var.db_password}"

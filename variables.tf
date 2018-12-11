@@ -57,3 +57,4 @@ variable "db_instance_class" {
 variable "instance_type" { default = "t2.micro" }
 variable "min_size" { default = "1" }
 variable "max_size" { default = "1" }
+variable "image_tag" { default = "4" }
